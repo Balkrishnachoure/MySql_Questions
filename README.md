@@ -1,5 +1,16 @@
 # MySql_Questions
 
+
+Order of Execution of Sql Queries :
+
+In an SQL query, the logical processing order of the statements is as follows:
+
+FROM clause: The data is retrieved from the specified table(s) in the FROM clause.
+WHERE clause: If there's a WHERE clause, the conditions specified are applied to filter the rows from the tables specified in the FROM clause.
+GROUP BY clause: If there's a GROUP BY clause, the rows are then grouped based on the specified columns.
+SELECT clause: The SELECT clause is applied to the grouped data, and any aggregate functions are calculated (such as COUNT in your case).
+ORDER BY clause: If there's an ORDER BY clause, the results are then sorted based on the specified columns.
+
 Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()  
 1. Calculate the average salary of all employees in the "salaries" table.
 2. Grouping and Aggregating: For each department in the "employees" table, find the total number of employees and the average salary.
