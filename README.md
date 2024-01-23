@@ -10,5 +10,5 @@ Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()
 7. Using GROUP_CONCAT or STRING_AGG:  Concatenate the names of all employees in each department, separated by a comma.
 
 
- Section 2 :  Group By and  Having Clause :  Having clause cant be used without group by  but group by cna be used without having :
+ Section 2 :  Group By and  Having Clause :  Having clause cant be used without group by  but group by can be used without having :
  1. 
