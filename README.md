@@ -65,4 +65,16 @@ Retrieve the names of all products and their suppliers from the "products" and "
 12.Nested Join with EXISTS Clause:List all products from the "products" table that have been ordered at least once. Utilize a nested subquery with the EXISTS clause to accomplish this task.
 13.Nested Join with Aggregate Function:Display the names of all employees who have a salary greater than the average salary of employees in their department. Use a nested subquery with an aggregate function to compute the average salary for each department.
 
+Sections 5 : INDEXING : 
+1.What is indexing in MySQL, and why is it important?
+2.How does MySQL use B-tree indexing?
+3.Explain the difference between clustered and non-clustered indexes in MySQL.
+4.When would you use composite indexing in MySQL, and what are its advantages?
+5.What are the potential drawbacks of adding indexes to a MySQL table?
+6.How does indexing affect INSERT, UPDATE, and DELETE operations in MySQL?
+7.What is the maximum number of indexes that can be created on a MySQL table?
+8.How can you determine whether an index is being used in a MySQL query?
+9.Explain the difference between a covering index and a regular index in MySQL.
+10.What strategies can you employ to optimize the performance of queries that are not using indexes effectively in MySQL?
+
      
