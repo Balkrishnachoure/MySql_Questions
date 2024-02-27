@@ -48,4 +48,21 @@ Section 3 : Order By :
 8.Order by String Length:Retrieve the names of all products from the "products" table ordered by the length of their product name in ascending order.
 9.Order by Multiple Columns with Different Directions:Write a query to fetch the names and joining dates of employees from the "employees" table, ordered by joining date in descending order, and then by name in ascending order.
 10.Order by Case Statement:Fetch all student records from the "students" table and order them by their grade level. However, if the grade level is 'K', it should appear last.
+
+Section 4 : Joins :
+1.Inner Join:Retrieve the names of all employees and their corresponding department names from the "employees" and "departments" tables using an inner join.
+2.Left Join:Display the names of all employees and their department names. If an employee does not belong to any department, display "No Department" instead, using a left join.
+3.Right Join:List all departments and the names of employees who belong to them. If a department has no employees, display "No Employees" using a right join.
+4.Full Outer Join:Fetch all records from both the "students" and "grades" tables, displaying student names and their grades if available. If a student has no grade, display "Not Graded".
+5.Self Join:Retrieve the names of all employees and their managers from the "employees" table. Match employees to their managers using a self join.
+6.Cross Join:List all possible combinations of employees and departments from the "employees" and "departments" tables using a cross join.
+7.Join with Multiple Conditions:Retrieve the names of all employees and their corresponding department names where the employee's department ID matches and the department is located in 'New York'.
+8.Join with Aggregate Functions:Display the department names and the total number of employees in each department from the "employees" table using an appropriate join.
+9.Join with Subquery:
+Retrieve the names of all products and their suppliers from the "products" and "suppliers" tables, where the supplier's country is 'USA'.
+10.Join with Group By:Show the department names and the average salary of employees in each department, considering only departments with an average salary greater than $50000.
+11.Nested Join with IN Clause:Retrieve the names of all employees from the "employees" table who work in departments located in 'New York'. Use a nested subquery with the IN clause to achieve this.
+12.Nested Join with EXISTS Clause:List all products from the "products" table that have been ordered at least once. Utilize a nested subquery with the EXISTS clause to accomplish this task.
+13.Nested Join with Aggregate Function:Display the names of all employees who have a salary greater than the average salary of employees in their department. Use a nested subquery with an aggregate function to compute the average salary for each department.
+
      
