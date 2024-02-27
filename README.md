@@ -4,12 +4,17 @@
 Order of Execution of Sql Queries :
 
 In an SQL query, the logical processing order of the statements is as follows:
-
 FROM clause: The data is retrieved from the specified table(s) in the FROM clause.
 WHERE clause: If there's a WHERE clause, the conditions specified are applied to filter the rows from the tables specified in the FROM clause.
 GROUP BY clause: If there's a GROUP BY clause, the rows are then grouped based on the specified columns.
 SELECT clause: The SELECT clause is applied to the grouped data, and any aggregate functions are calculated (such as COUNT in your case).
 ORDER BY clause: If there's an ORDER BY clause, the results are then sorted based on the specified columns.
+
+Some Theoretical Qustions :
+1.Explain 1Nf,2NF ,3NF ,BCNF ?
+2.Explain All joins ?
+3.Difference between Delete and Truncate , Primary Key and Composite Key , Unique and Primary Key ?
+4.Look into and see the Query of Update ,Alter ,Drop ?
 
 Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()  
 1. Calculate the average salary of all employees in the "salaries" table.
@@ -31,3 +36,16 @@ Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()
  7. Find the maximum salary in each department and only display departments where the maximum salary is above 90000.
  8. Calculate the total bonus amount for each department and display only those departments where the total bonus is greater than 50000.
  9. Salary Growth Analysis:For each department, find the average salary for the year 2023 and the average salary for the year 2024. Display only those departments where the average salary has increased by at least 10%.
+
+Section 3 : Order By :
+1.Basic Ordering:Write a query to retrieve all employees from the "employees" table ordered by their last name in ascending order.
+2.Descending Order:Retrieve the names and salaries of all employees from the "employees" table, ordering them by their salary in descending order.
+3.Multiple Columns Order:Show the names, departments, and salaries of employees from the "employees" table, ordered by department first in ascending order, and then by salary in descending order.
+4.Ordering with NULL Values:Retrieve all records from the "students" table ordering them by the "birthdate" column in ascending order. Handle NULL values appropriately.
+5.Order by Expression:Write a query to fetch the names of employees and their total annual salary (assuming a monthly salary exists), ordered by the total annual salary in descending order.
+6.Order by Aggregate Function:Retrieve the department names and the total number of employees in each department, ordered by the total number of employees in descending order.
+7.Order by Date:Fetch all orders from the "orders" table ordered by their order date in descending order.
+8.Order by String Length:Retrieve the names of all products from the "products" table ordered by the length of their product name in ascending order.
+9.Order by Multiple Columns with Different Directions:Write a query to fetch the names and joining dates of employees from the "employees" table, ordered by joining date in descending order, and then by name in ascending order.
+10.Order by Case Statement:Fetch all student records from the "students" table and order them by their grade level. However, if the grade level is 'K', it should appear last.
+     
