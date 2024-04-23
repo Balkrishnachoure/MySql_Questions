@@ -1,7 +1,7 @@
 # MySql_Questions
 
 
-Order of Execution of Sql Queries :
+Note : Order of Execution of Sql Queries :
 
 In an SQL query, the logical processing order of the statements is as follows:
 FROM clause: The data is retrieved from the specified table(s) in the FROM clause.
