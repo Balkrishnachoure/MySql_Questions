@@ -12,8 +12,11 @@ ORDER BY clause: If there's an ORDER BY clause, the results are then sorted base
 
 Some Theoretical Qustions :
 1.Explain 1Nf,2NF ,3NF ,BCNF ?
+
 2.Explain All joins ?
+
 3.Difference between Delete and Truncate and Drop  , Primary Key and Composite Key , Unique and Primary Key ?
+
 4.Look into and see the Query of Update ,Alter ,Drop ?
 
 Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()  
