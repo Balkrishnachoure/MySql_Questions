@@ -113,7 +113,7 @@ SECTION 5 : INDEXING :
 
 -------------------------------------------------------------------------
 
-SECTION : 6 : CASE 
+SECTION : 6 : CASE  (Only for Practice not for Interview )
 
 1. Conditional Output in SELECT Clause :
 Write a query to display employee names and their salary categories based on the following conditions:
