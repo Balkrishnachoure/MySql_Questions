@@ -100,7 +100,7 @@ Retrieve the names of all products and their suppliers from the "products" and "
 ------------------------------------------------------------------------
 
 SECTION 5 : INDEXING : 
-1.What is indexing in MySQL, and why is it important?
+1.What is indexing in MySQL, and why is it important? Types of Indexing ?
 2.How does MySQL use B-tree indexing?
 3.Explain the difference between clustered and non-clustered indexes in MySQL.
 4.When would you use composite indexing in MySQL, and what are its advantages?
