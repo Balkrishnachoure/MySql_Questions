@@ -114,4 +114,46 @@ SECTION 5 : INDEXING :
 -------------------------------------------------------------------------
 
 SECTION : 6 : CASE 
+
+1. Conditional Output in SELECT Clause :
+Write a query to display employee names and their salary categories based on the following conditions:
+If the salary is greater than 10000, categorize as "High Salary".
+If the salary is between 5000 and 10000 (inclusive), categorize as "Medium Salary".
+Otherwise, categorize as "Low Salary".
+
+
+2.Conditional Filtering with WHERE Clause :
+Fetch the details of students where:
+If the student is in grade "K", select students with a grade greater than 85.
+For other grades, select students with a grade greater than 75.
+
+3.Use CASE in ORDER BY :
+Retrieve product names from the products table, but order them as follows:
+Products in the category "Electronics" should appear first.
+Then, order the rest of the products alphabetically by their name.
+
+4.CASE in GROUP BY / HAVING Clause :
+Write a query that groups employees by their department and counts how many employees are in each department.
+Only include departments that have more than 5 employees if the department is "Sales".
+For other departments, include those with more than 10 employees.
+
+5. Nested CASE :
+Retrieve the names of all employees along with their tax bracket:
+If the employee’s salary is greater than 10000, the tax bracket is "High".
+If the salary is between 5000 and 10000, the tax bracket is "Medium".
+Otherwise, assign a "Low" tax bracket.
+Additionally, if the employee is in the "Management" department and their salary is greater than 15000, assign the tax bracket as "Very High".
+
+6.  Multiple Conditions in CASE :
+Write a query to calculate the discount for each order:
+If the order total is greater than 1000 and the customer is a "VIP", apply a 20% discount.
+If the order total is greater than 1000 but the customer is not a "VIP", apply a 10% discount.
+For all other orders, apply a 5% discount.
+
+
+
+
+
+
+
      
