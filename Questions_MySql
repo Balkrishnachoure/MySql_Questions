@@ -19,7 +19,8 @@ Some Theoretical Qustions :
 
 4.Look into and see the Query of Update ,Alter ,Drop ?
 
-Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()  
+
+SECTION  1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()  
 1. Calculate the average salary of all employees in the "salaries" table.
 
 2. Grouping and Aggregating: For each department in the "employees" table, find the total number of employees and the average salary.
@@ -34,8 +35,9 @@ Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()
 
 7. Using GROUP_CONCAT or STRING_AGG:  Concatenate the names of all employees in each department, separated by a comma.
 
+----------------------------------------------------------------------
 
- Section 2 :  Group By and  Having Clause :  Having clause can't be used without group by but group by can be used without having :
+ SECTION 2 :  Group By and  Having Clause :  Having clause can't be used without group by but group by can be used without having :
  1. Write a query to find the total number of employees in each department from the "employees" table.
 
  2. Find the number of employees in each salary range (e.g., 0-50000, 50001-100000, etc.) from the "salaries" table
@@ -54,7 +56,9 @@ Section 1 :  Aggregate Functions : Count() , Max() , Min() , Sum() , Avg()
 
  9. Salary Growth Analysis:For each department, find the average salary for the year 2023 and the average salary for the year 2024. Display only those departments where the average salary has increased by at least 10%.
 
-Section 3 : Order By :
+-----------------------------------------------------------------------------
+
+SECTION  3 : Order By :
 1.Basic Ordering:Write a query to retrieve all employees from the "employees" table ordered by their last name in ascending order.
 
 2.Descending Order:Retrieve the names and salaries of all employees from the "employees" table, ordering them by their salary in descending order.
@@ -75,7 +79,9 @@ Section 3 : Order By :
 
 10.Order by Case Statement:Fetch all student records from the "students" table and order them by their grade level. However, if the grade level is 'K', it should appear last.
 
-Section 4 : Joins :
+---------------------------------------------------------------------------
+
+SECTION  4 : Joins :
 1.Inner Join:Retrieve the names of all employees and their corresponding department names from the "employees" and "departments" tables using an inner join.
 2.Left Join:Display the names of all employees and their department names. If an employee does not belong to any department, display "No Department" instead, using a left join.
 3.Right Join:List all departments and the names of employees who belong to them. If a department has no employees, display "No Employees" using a right join.
@@ -91,7 +97,9 @@ Retrieve the names of all products and their suppliers from the "products" and "
 12.Nested Join with EXISTS Clause:List all products from the "products" table that have been ordered at least once. Utilize a nested subquery with the EXISTS clause to accomplish this task.
 13.Nested Join with Aggregate Function:Display the names of all employees who have a salary greater than the average salary of employees in their department. Use a nested subquery with an aggregate function to compute the average salary for each department.
 
-Sections 5 : INDEXING : 
+------------------------------------------------------------------------
+
+SECTION 5 : INDEXING : 
 1.What is indexing in MySQL, and why is it important?
 2.How does MySQL use B-tree indexing?
 3.Explain the difference between clustered and non-clustered indexes in MySQL.
@@ -103,4 +111,7 @@ Sections 5 : INDEXING :
 9.Explain the difference between a covering index and a regular index in MySQL.
 10.What strategies can you employ to optimize the performance of queries that are not using indexes effectively in MySQL?
 
+-------------------------------------------------------------------------
+
+SECTION : 6 : CASE 
      
