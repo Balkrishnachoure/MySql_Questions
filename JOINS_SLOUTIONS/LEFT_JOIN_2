@@ -1,0 +1,44 @@
+
+2.Left Join:Display the names of all employees and their department names. If an employee does not belong to any department, display "No Department" instead, using a left join.
+
+Ans : A Left Join returns all records from the left table (in this case, the employees table), along with the matched records from the right table (departments table). 
+     If there is no match, the result will still include the left table's row, but the columns from the right table will be filled with NULL .
+
+1. employees Table  : 
+
+employee_id	      employee_name	     department_id
+1	                   Alice	           101
+2	                   Bob	             102
+3	                   Charlie           101
+4	                   David	           103
+5                   	Eva	             NULL
+
+2. departments Table : 
+
+department_id	       department_name
+101	                 HR
+102	                 IT
+103	                 Finance
+104                  Marketing
+
+
+Query : 
+SELECT e.employee_name, COALESCE(d.department_name, 'No Department') AS department_name
+FROM employees e
+LEFT JOIN departments d
+ON e.department_id = d.department_id;
+
+Result : 
+employee_name	         department_name
+Alice	                 HR
+Bob	                   IT
+Charlie              	 HR
+David	                 Finance
+Eva	No                 Department
+
+
+
+
+
+
+
