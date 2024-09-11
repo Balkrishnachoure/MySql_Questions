@@ -1,0 +1,34 @@
+Q .Right Join:List all departments and the names of employees who belong to them. If a department has no employees, display "No Employees" using a right join.
+
+Ans . Retrieves all records from the right table (the second table mentioned in the join clause) and the matching records 
+      from the left table (the first table). If there is no match, the result is NULL on the left table's columns.
+
+1. Employees Table:
+
+EmployeeID	    EmployeeName	DepartmentID
+1	                 Alice	       101
+2	                 Bob	         102
+3	                 Charlie	     NULL
+4	                 Dave	         103
+
+2. Departments Table:
+
+DepartmentID	         DepartmentName
+101	                   HR
+102	                   IT
+103                    Marketing
+104	                   Sales
+
+Query : 
+SELECT   d.DepartmentName,  COALESCE(e.EmployeeName, 'No Employees') AS EmployeeName
+FROM  Employees e
+RIGHT JOIN  Departments d 
+ON e.DepartmentID = d.DepartmentID;
+
+Result:
+DepartmentName	            EmployeeName
+HR	                          Alice
+IT	                          Bob
+Marketing                     Dave
+Sales	                        No Employees
+
