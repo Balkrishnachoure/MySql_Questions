@@ -7,7 +7,7 @@ table with every row from the second table. This type of join results in all pos
 
 employee_id	          employee_name
 1                       Alice
-2	                      Bob
+2	                   Bob
 
 2. departments Table:
 
