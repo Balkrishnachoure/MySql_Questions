@@ -1,0 +1,39 @@
+Q .Full Outer Join:Fetch all records from both the "students" and "grades" tables, displaying student names and their grades if available. If a student has no grade, display "Not Graded".
+Ans .  Full Outer Join combines the results of both Left Join and Right Join. 
+It returns all records from both tables and matches records where possible.
+If there's no match, the result will include NULL values for the columns where there is no corresponding data from the other table.
+
+
+1. Students Table:
+
+StudentID	         StudentName
+1	                   Alice
+2	                   Bob
+3	                   Charlie
+4	                   Dave
+
+2.Grades Table:
+
+StudentID          	Grade
+1	                     A
+2	                     B
+5	                     C
+
+QUERY : 
+SELECT s.StudentName, COALESCE(g.Grade, 'Not Graded') AS Grade
+FROM  Students s
+FULL OUTER JOIN  Grades g 
+ON s.StudentID = g.StudentID;
+
+Result :
+
+StudentName	          Grade
+Alice                 	A
+Bob                   	B
+Charlie             	Not Graded
+Dave                	Not Graded
+NULL                  	C
+
+
+
+
