@@ -24,11 +24,11 @@ CROSS JOIN departments d;
 
 Result : 
 
-employee_id     employee_name	department_id	            department_name
-1	Alice                	101	                             HR
-1	Alice	                102	                             Finance
-2	Bob	                  101                            	 HR
-2	Bob	                  102                            	 Finance
+employee_id            employee_name	department_id	            department_name
+1                      	Alice                	101	                             HR
+1	                     Alice	                102	                             Finance
+2                      	Bob	                  101                            	 HR
+2                     	Bob	                  102                            	 Finance
 
 
 
