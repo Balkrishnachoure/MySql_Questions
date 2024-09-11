@@ -1,0 +1,35 @@
+Q .Self Join:Retrieve the names of all employees and their managers from the "employees" table. Match employees to their managers using a self join.
+
+Ans .A Self Join is a join in which a table is joined with itself. It is used to compare rows within the same table, treating it as if it were two separate tables. 
+This is particularly useful when you need to relate rows to other rows within the same table, such as finding employees and their managers.
+
+1 . Employees Table:  
+
+EmployeeID	                 EmployeeName              	ManagerID
+1	                               Alice                    	3
+2	                               Bob	                      3
+3	                               Charlie	                 NULL
+4                              	 Dave	                      3
+5                              	 Eve                        1
+
+
+QUERY : 
+SELECT  e.EmployeeName AS Employee,  m.EmployeeName AS Manager
+FROM  Employees e 
+LEFT JOIN Employees m 
+ON  e.ManagerID = m.EmployeeID;
+
+RESULT : 
+
+Employee	                Manager
+Alice                    	Charlie
+Bob	                      Charlie
+Charlie	                  NULL
+Dave	                    Charlie
+Eve                     	Alice
+
+
+
+
+
+
