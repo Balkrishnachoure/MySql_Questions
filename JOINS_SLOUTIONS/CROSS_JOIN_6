@@ -5,15 +5,19 @@ table with every row from the second table. This type of join results in all pos
 
 1. employees Table : 
 
-employee_id	          employee_name
-1                       Alice
-2	                   Bob
+| employee_id | employee_name |
+|-------------|---------------|
+| 1           | Alice         |
+| 2           | Bob           |
+
 
 2. departments Table:
 
-department_id	       department_name
-101	                   HR
-102	                   Finance
+| department_id | department_name |
+|---------------|-----------------|
+| 101           | HR              |
+| 102           | Finance         |
+
 
 Query : 
 
@@ -24,11 +28,13 @@ CROSS JOIN departments d;
 
 Result : 
 
-employee_id            employee_name	department_id	            department_name
-1                      	Alice                	101	                             HR
-1	                     Alice	                102	                             Finance
-2                      	Bob	                  101                            	 HR
-2                     	Bob	                  102                            	 Finance
+| employee_id | employee_name | department_id | department_name |
+|-------------|---------------|---------------|-----------------|
+| 1           | Alice         | 101           | HR              |
+| 1           | Alice         | 102           | Finance         |
+| 2           | Bob           | 101           | HR              |
+| 2           | Bob           | 102           | Finance         |
+
 
 
 
