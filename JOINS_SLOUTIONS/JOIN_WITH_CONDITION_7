@@ -1,0 +1,49 @@
+Q .Join with Multiple Conditions:Retrieve the names of all employees and their corresponding department names where the employee's department ID matches and the department is located in 'New York'.
+
+Ans . 
+1. Employees Table : 
+
+| EmployeeID | EmployeeName | DepartmentID |
+|------------|--------------|--------------|
+| 1          | John Doe     | 101          |
+| 2          | Jane Smith   | 102          |
+| 3          | Mike Johnson | 101          |
+| 4          | Emily Davis  | 103          |
+
+
+2. Departments Table
+
+| DepartmentID | DepartmentName | Location  |
+|--------------|----------------|-----------|
+| 101          | HR             | New York  |
+| 102          | IT             | Chicago   |
+| 103          | Finance        | New York  |
+| 104          | Marketing      | San Francisco |
+
+
+
+QUERY : 
+SELECT e.EmployeeName, d.DepartmentName
+FROM Employees e
+JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE d.Location = 'New York';
+
+
+RESULT :
+
+| EmployeeName | DepartmentName |
+|--------------|----------------|
+| John Doe     | HR             |
+| Mike Johnson | HR             |
+| Emily Davis  | Finance        |
+
+
+
+
+
+
+
+
+
+
+
