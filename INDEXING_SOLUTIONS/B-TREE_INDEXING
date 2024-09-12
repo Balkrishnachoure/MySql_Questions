@@ -1,0 +1,5 @@
+
+Q.How does MySQL use B-tree indexing?
+Ans .MySQL's B-tree indexing provides efficient data retrieval, balanced storage of key values, and support for a wide range of queries, 
+     including exact match and range-based lookups, while minimizing disk I/O. This makes it a powerful tool for optimizing 
+     performance in databases with large datasets.
