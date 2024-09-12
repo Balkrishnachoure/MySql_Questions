@@ -5,12 +5,13 @@ This is particularly useful when you need to relate rows to other rows within th
 
 1 . Employees Table:  
 
-EmployeeID	                 EmployeeName              	ManagerID
-1	                               Alice                    	3
-2	                               Bob	                      3
-3	                               Charlie	                 NULL
-4                              	 Dave	                      3
-5                              	 Eve                        1
+| EmployeeID | EmployeeName | ManagerID |
+|------------|--------------|-----------|
+| 1          | Alice        | 3         |
+| 2          | Bob          | 3         |
+| 3          | Charlie      | NULL      |
+| 4          | Dave         | 3         |
+| 5          | Eve          | 1         |
 
 
 QUERY : 
@@ -21,12 +22,13 @@ ON  e.ManagerID = m.EmployeeID;
 
 RESULT : 
 
-Employee	                Manager
-Alice                    	Charlie
-Bob	                      Charlie
-Charlie	                  NULL
-Dave	                    Charlie
-Eve                     	Alice
+| Employee | Manager  |
+|----------|----------|
+| Alice    | Charlie  |
+| Bob      | Charlie  |
+| Charlie  | NULL     |
+| Dave     | Charlie  |
+| Eve      | Alice    |
 
 
 
