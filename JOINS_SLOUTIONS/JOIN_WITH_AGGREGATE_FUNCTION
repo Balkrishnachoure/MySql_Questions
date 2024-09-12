@@ -1,0 +1,42 @@
+Q.Join with Aggregate Functions:Display the department names and the total number of employees in each department from the "employees" table using an appropriate join.
+Ans . 
+1. Employees Table : 
+
+| EmployeeID | EmployeeName | DepartmentID |
+|------------|--------------|--------------|
+| 1          | John Doe     | 101          |
+| 2          | Jane Smith   | 102          |
+| 3          | Mike Johnson | 101          |
+| 4          | Emily Davis  | 103          |
+| 5          | Sarah Brown  | 101          |
+
+
+2. Departments Table :
+
+| DepartmentID | DepartmentName |
+|--------------|----------------|
+| 101          | HR             |
+| 102          | IT             |
+| 103          | Finance        |
+| 104          | Marketing      |
+
+
+Query : 
+SELECT d.DepartmentName, COUNT(e.EmployeeID) AS TotalEmployees
+FROM Departments d
+LEFT JOIN Employees e ON d.DepartmentID = e.DepartmentID
+GROUP BY d.DepartmentName;
+
+
+RESULT : 
+
+| DepartmentName | TotalEmployees |
+|----------------|----------------|
+| HR             | 3              |
+| IT             | 1              |
+| Finance        | 1              |
+| Marketing      | 0              |
+
+
+
+
