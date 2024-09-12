@@ -1,1 +1,85 @@
+Q .What is indexing in MySQL, and why is it important? Types of Indexing ?
+
+Ans.  Indexing in MySQL is a database optimization technique used to improve the speed and efficiency of data retrieval operations. 
+       It Allow the database to quickly locate and access the data without having to scan the entire table.
+
+### Indexing Importance : 
+1.Improves Query Performance: Indexes speed up the retrieval of rows from a table by allowing the database to find data quickly rather than scanning all rows.
+2.Reduces I/O Operations: Indexes can reduce the number of disk reads required to retrieve data, thus improving performance.
+3.Enhances Sorting and Filtering: Indexes are used in sorting operations (e.g., ORDER BY) and filtering conditions (e.g., WHERE clauses) to speed up query execution.
+
+ ### Types of Indexing in MySQL : 
+
+1.Primary Index:
+Also known as the primary key index.
+It uniquely identifies each row in a table.
+Only one primary key can be defined per table, and it cannot contain NULL values.
+Example: PRIMARY KEY (employee_id)
+
+2.Unique Index:
+Ensures that all values in the indexed column(s) are unique.
+Allows for NULL values (only one NULL is allowed for each unique index).
+Example: UNIQUE (email)
+
+3.Non-Unique Index:
+Also known as a regular or standard index.
+Allows duplicate values in the indexed column(s).
+Improves query performance without enforcing uniqueness.
+Example: INDEX (department_id)
+
+4.Composite Index:
+An index on multiple columns in a table.
+Useful for queries that filter on multiple columns.
+The order of columns in the index is important.
+Example: INDEX (last_name, first_name)
+
+5.Full-Text Index:
+Used for full-text searches on text-based columns (e.g., VARCHAR, TEXT).
+Allows efficient searching of text data for words and phrases.
+Example: FULLTEXT (description)
+
+6.Spatial Index:
+Used for spatial data types (e.g., GEOMETRY).
+Enables efficient querying of spatial data (e.g., geographic coordinates).
+Example: SPATIAL (location)
+
+7.Clustered Index:
+The data in the table is physically sorted according to the index.
+In MySQL, the primary key is a clustered index by default.
+Only one clustered index per table is allowed.
+
+8.Non-Clustered Index:
+The index is stored separately from the table data.
+The index contains pointers to the rows in the table
+
+
+ ### Example of Creating an Index : 
+
+-- Create a primary key index
+ALTER TABLE employees
+ADD PRIMARY KEY (employee_id);
+
+
+-- Create a unique index
+CREATE UNIQUE INDEX idx_email
+ON employees (email);
+
+
+-- Create a non-unique index
+CREATE INDEX idx_department
+ON employees (department_id);
+
+
+-- Create a composite index
+CREATE INDEX idx_name
+ON employees (last_name, first_name);
+
+
+-- Create a full-text index
+CREATE FULLTEXT INDEX idx_description
+ON products (description);
+
+
+
+
 
