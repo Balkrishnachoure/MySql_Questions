@@ -6,18 +6,22 @@ If there's no match, the result will include NULL values for the columns where t
 
 1. Students Table:
 
-StudentID	         StudentName
-1	                   Alice
-2	                   Bob
-3	                   Charlie
-4	                   Dave
+| StudentID | StudentName |
+|-----------|-------------|
+| 1         | Alice       |
+| 2         | Bob         |
+| 3         | Charlie     |
+| 4         | Dave        |
+
 
 2.Grades Table:
 
-StudentID          	Grade
-1	                     A
-2	                     B
-5	                     C
+| StudentID | Grade |
+|-----------|-------|
+| 1         | A     |
+| 2         | B     |
+| 5         | C     |
+
 
 QUERY : 
 SELECT s.StudentName, COALESCE(g.Grade, 'Not Graded') AS Grade
@@ -27,12 +31,13 @@ ON s.StudentID = g.StudentID;
 
 Result :
 
-StudentName	          Grade
-Alice                 	A
-Bob                   	B
-Charlie             	Not Graded
-Dave                	Not Graded
-NULL                  	C
+| StudentName | Grade        |
+|-------------|--------------|
+| Alice       | A            |
+| Bob         | B            |
+| Charlie     | Not Graded   |
+| Dave        | Not Graded   |
+| NULL        | C            |
 
 
 
