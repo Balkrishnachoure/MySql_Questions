@@ -1,1 +1,16 @@
 
+Mashres is nothing but the  banking system , I worked  on  credit card and personal loan summry project , 
+
+Now  when the Customer onboard the case/ apply for the credit card  it , on the FE side  there where product operation , Technical Opertation team and sellers/ customer
+the request  First goes to the api proxy from there it , route the request to its respective serrvice ,  the service which i own was Channel service  which  contains the 
+apis  for  Doc upload/ download into EDMS  vault ,  Customer details , Product details and Employment details retrieval from the Digital service , Digtal service  was nothing 
+but the middleware api team wich provide these details.They further get the details form the FRICOSOFT decision engine , which   provide the the  this details the the deatails
+land in the ISCORE decision engine based on the Decision the case then  lands in STP  or NSTP(Non straight through process) ,
+                                                                   For NSTP cases the details further land into Camunda modler where various teams  like fraud Team , 
+Bacground  varification team , Credit Evaluation Team veiry the Details and faroward the Decision , if any of the team reject the dicission the the  case  will not land 
+in   disbursal Service and application will terminate , if approved it lanf in Disbusrsal serive and form there  the Credit card disbursal will happen . 
+
+
+There were nearly 10 -15 microservices ,
+
+
