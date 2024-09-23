@@ -1,5 +1,5 @@
 
-Mashres is nothing but the  banking system , I worked  on  credit card and personal loan summry project , 
+Mashres is nothing but the  banking system , I worked  on  credit card and personal loan summry project (CCPL-EG)  , 
 
 Now  when the Customer onboard the case/ apply for the credit card  it , on the FE side  there where product operation , Technical Opertation team and sellers/ customer
 the request  First goes to the api proxy from there it , route the request to its respective serrvice ,  the service which i own was Channel service  which  contains the 
