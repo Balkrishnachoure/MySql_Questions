@@ -52,7 +52,38 @@ Only one clustered index per table is allowed.
 The index is stored separately from the table data.
 The index contains pointers to the rows in the table
 
+Ex: 
++------------+-----------+----------+------------+--------+
+| EmployeeID | FirstName | LastName | Department | Salary |
++------------+-----------+----------+------------+--------+
+|     1      |   John    |   Doe    |    IT      |  70000 |
+|     2      |   Jane    |  Smith   |    HR      |  60000 |
+|     3      |   Sam     |  Brown   |    IT      |  72000 |
+|     4      |   Lucy    |  Green   |  Finance   |  68000 |
+|     5      |   Mike    |  White   |    HR      |  65000 |
++------------+-----------+----------+------------+--------+
 
+Query : CREATE NONCLUSTERED INDEX idx_employees_lastname 
+ON Employees (LastName);
+
+Result : 
+
++-----------+----------------+
+| LastName  | Pointer to Row  |
++-----------+----------------+
+|  Brown    |      Row 3      |
+|  Doe      |      Row 1      |
+|  Green    |      Row 4      |
+|  Smith    |      Row 2      |
+|  White    |      Row 5      |
++-----------+----------------+
+
+Note :
+1. The non-clustered index creates a separate structure that includes the LastName and pointers (row locators)
+2. In the Non-Clustered Index, LastName is stored in sorted order, and each entry points to the actual data row in the Employees table.
+
+
+============================================
  ### Example of Creating an Index : 
 
 -- Create a primary key index
