@@ -1,6 +1,6 @@
 Q . Cross Join:List all possible combinations of employees and departments from the "employees" and "departments" tables using a cross join.
 
-Ans . A CROSS JOIN produces a Cartesian product of the two tables involved, which means it pairs each row from the first 
+Ans . A CROSS JOIN produces a   (matrix multiplication)  Cartesian product of the two tables involved, which means it pairs each row from the first 
 table with every row from the second table. This type of join results in all possible combinations of rows between the two tables .
 
 1. employees Table : 
