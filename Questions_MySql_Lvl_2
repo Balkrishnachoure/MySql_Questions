@@ -1,1 +1,47 @@
+Level 2:
+
+What are the different types of JOINs in MySQL, and when would you use each?
+Explain the difference between UNION and UNION ALL.
+How can you prevent SQL injection attacks in MySQL?
+What is a subquery, and how is it used within a SELECT statement?
+Explain the purpose and usage of indexes in MySQL.
+What is the difference between a primary key and a unique key?
+How does MySQL handle NULL values in comparisons and calculations?
+What are stored procedures, and how do they differ from functions in MySQL?
+How would you use CASE statements to implement conditional logic in a query?
+What is a view in MySQL, and how does it differ from a table?
+Explain how to implement transactions in MySQL and discuss their importance.
+What is normalization, and what are the different normal forms in database design?
+How can you optimize queries in MySQL for better performance?
+What are triggers, and how are they used in MySQL?
+Describe the difference between IN and EXISTS in MySQL.
+Explain foreign key constraints and how they maintain referential integrity.
+How does MySQL handle ACID properties, and why are they important?
+What are composite keys, and when would you use them?
+How can you copy data from one table to another in MySQL?
+What is the purpose of the GROUP BY clause, and how is it used with aggregate functions?
+
+
+Level 3: 
+Explain the process and benefits of indexing multiple columns in a MySQL table.
+How would you identify and resolve deadlock situations in MySQL?
+Describe partitioning in MySQL and the different partitioning methods available.
+How does MySQL implement replication, and what are the main types?
+What are Full-Text indexes, and how are they used for searching text-based content?
+How can you monitor and analyze MySQL query performance?
+Explain the difference between row-level locking and table-level locking in MySQL.
+Describe how MySQL’s InnoDB and MyISAM storage engines differ.
+How does MySQL handle transactions in a distributed environment?
+What are derived tables, and when are they useful?
+Explain the concept of sharding and how it can be implemented in MySQL.
+How can you use window functions for advanced analytics in MySQL?
+What are ENUM and SET data types, and when would you use them?
+Describe how and why to use the EXPLAIN command in query optimization.
+What is the difference between the CHAR and VARCHAR data types?
+How can you migrate data from MySQL to another database or vice versa?
+Explain the difference between a correlated subquery and a regular subquery.
+How does MySQL manage concurrency with the use of locks?
+What are CTEs (Common Table Expressions), and how do they improve query readability?
+Explain the purpose and usage of JSON data type support in MySQL.
+
 
