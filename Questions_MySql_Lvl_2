@@ -29,6 +29,7 @@ Purpose: To test understanding of reusable database objects for processing.
 
 
 Level 3: 
+
 Explain the process and benefits of indexing multiple columns in a MySQL table.
 How would you identify and resolve deadlock situations in MySQL?
 Describe partitioning in MySQL and the different partitioning methods available.
