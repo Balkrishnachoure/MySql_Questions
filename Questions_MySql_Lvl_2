@@ -21,6 +21,12 @@ What are composite keys, and when would you use them?
 How can you copy data from one table to another in MySQL?
 What is the purpose of the GROUP BY clause, and how is it used with aggregate functions?
 
+Explain the difference between the WHERE and HAVING clauses in MySQL.
+Purpose: To test understanding of filtering data in queries.
+
+What are stored procedures in MySQL, and how do they differ from functions?
+Purpose: To test understanding of reusable database objects for processing.
+
 
 Level 3: 
 Explain the process and benefits of indexing multiple columns in a MySQL table.
@@ -41,7 +47,7 @@ What is the difference between the CHAR and VARCHAR data types?
 How can you migrate data from MySQL to another database or vice versa?
 Explain the difference between a correlated subquery and a regular subquery.
 How does MySQL manage concurrency with the use of locks?
-What are CTEs (Common Table Expressions), and how do they improve query readability?
+What are CTEs (Common Table Expressions), and how do they improve query readability and query performance?
 Explain the purpose and usage of JSON data type support in MySQL.
 
 
