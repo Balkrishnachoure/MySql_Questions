@@ -20,10 +20,8 @@ Level 2:
 18.What are composite keys, and when would you use them?
 19.How can you copy data from one table to another in MySQL?
 20.What is the purpose of the GROUP BY clause, and how is it used with aggregate functions?
-
 21.Explain the difference between the WHERE and HAVING clauses in MySQL.
 Purpose: To test understanding of filtering data in queries.
-
 22.What are stored procedures in MySQL, and how do they differ from functions?
 Purpose: To test understanding of reusable database objects for processing.
 
