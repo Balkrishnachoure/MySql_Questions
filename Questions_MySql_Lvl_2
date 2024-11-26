@@ -1,30 +1,30 @@
 Level 2:
 
-What are the different types of JOINs in MySQL, and when would you use each?
-Explain the difference between UNION and UNION ALL.
-How can you prevent SQL injection attacks in MySQL?
-What is a subquery, and how is it used within a SELECT statement?
-Explain the purpose and usage of indexes in MySQL.
-What is the difference between a primary key and a unique key?
-How does MySQL handle NULL values in comparisons and calculations?
-What are stored procedures, and how do they differ from functions in MySQL?
-How would you use CASE statements to implement conditional logic in a query?
-What is a view in MySQL, and how does it differ from a table?
-Explain how to implement transactions in MySQL and discuss their importance.
-What is normalization, and what are the different normal forms in database design?
-How can you optimize queries in MySQL for better performance?
-What are triggers, and how are they used in MySQL?
-Describe the difference between IN and EXISTS in MySQL.
-Explain foreign key constraints and how they maintain referential integrity.
-How does MySQL handle ACID properties, and why are they important?
-What are composite keys, and when would you use them?
-How can you copy data from one table to another in MySQL?
-What is the purpose of the GROUP BY clause, and how is it used with aggregate functions?
+1.What are the different types of JOINs in MySQL, and when would you use each?
+2.Explain the difference between UNION and UNION ALL.
+3.How can you prevent SQL injection attacks in MySQL?
+4.What is a subquery, and how is it used within a SELECT statement?
+5.Explain the purpose and usage of indexes in MySQL.
+6.What is the difference between a primary key and a unique key?
+7.How does MySQL handle NULL values in comparisons and calculations?
+8.What are stored procedures, and how do they differ from functions in MySQL?
+9.How would you use CASE statements to implement conditional logic in a query?
+10.What is a view in MySQL, and how does it differ from a table?
+11.Explain how to implement transactions in MySQL and discuss their importance.
+12.What is normalization, and what are the different normal forms in database design?
+13.How can you optimize queries in MySQL for better performance?
+14.What are triggers, and how are they used in MySQL?
+15.Describe the difference between IN and EXISTS in MySQL.
+16.Explain foreign key constraints and how they maintain referential integrity.
+17.How does MySQL handle ACID properties, and why are they important?
+18.What are composite keys, and when would you use them?
+19.How can you copy data from one table to another in MySQL?
+20.What is the purpose of the GROUP BY clause, and how is it used with aggregate functions?
 
-Explain the difference between the WHERE and HAVING clauses in MySQL.
+21.Explain the difference between the WHERE and HAVING clauses in MySQL.
 Purpose: To test understanding of filtering data in queries.
 
-What are stored procedures in MySQL, and how do they differ from functions?
+22.What are stored procedures in MySQL, and how do they differ from functions?
 Purpose: To test understanding of reusable database objects for processing.
 
 
