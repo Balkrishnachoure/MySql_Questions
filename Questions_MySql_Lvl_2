@@ -4,7 +4,7 @@ Level 2:
 2.Explain the difference between UNION and UNION ALL.
 3.How can you prevent SQL injection attacks in MySQL?
 4.What is a subquery, and how is it used within a SELECT statement?
-5.Explain the purpose and usage of indexes in MySQL.
+5.Explain the purpose and usage of indexes in MySQL.           
 6.What is the difference between a primary key and a unique key?
 7.How does MySQL handle NULL values in comparisons and calculations?
 8.What are stored procedures, and how do they differ from functions in MySQL?
