@@ -1,9 +1,145 @@
 Order of Execution of Sql Queries :
 
 In an SQL query, the logical processing order of the statements is as follows:
-
 FROM clause: The data is retrieved from the specified table(s) in the FROM clause. 
 WHERE clause: If there's a WHERE clause, the conditions specified are applied to filter the rows from the tables specified in the FROM clause. 
 GROUP BY clause: If there's a GROUP BY clause, the rows are then grouped based on the specified columns. 
 SELECT clause: The SELECT clause is applied to the grouped data, and any aggregate functions are calculated (such as COUNT in your case). 
 ORDER BY clause: If there's an ORDER BY clause, the results are then sorted based on the specified columns.
+
+-----------------------------------------------------
+1. Database Design Principles :
+Normalization (1NF, 2NF, 3NF, BCNF) – Reduce redundancy.
+Denormalization – Optimize performance when needed.
+Primary & Foreign Keys – Define relationships between tables.
+Indexing – Improve query performance (Clustered & Non-clustered).
+Partitioning – Distribute large tables across partitions.
+
+2. SQL Data Types
+Numeric (INT, BIGINT, DECIMAL, FLOAT)
+Character/String (VARCHAR, NVARCHAR, TEXT)
+Date/Time (DATETIME, DATE, TIME, DATETIMEOFFSET)
+Boolean (BIT)
+Binary (VARBINARY, IMAGE)
+
+3. Constraints & Keys
+Primary Key – Unique identifier for records.
+Foreign Key – Maintain referential integrity.
+Unique Constraint – Ensure uniqueness of column values.
+Check Constraint – Enforce domain-specific rules.
+Default Constraint – Set default values.
+Not Null Constraint – Prevent NULL values.
+
+4. Relationships & Referential Integrity
+One-to-One – Rare, used for splitting data.
+One-to-Many – Common relationship type (e.g., Customers & Orders).
+Many-to-Many – Handled using junction tables.
+Cascade Updates & Deletes – Maintain integrity across related records.
+
+
+5. Indexing & Performance Optimization
+Clustered vs Non-Clustered Indexes – Organizing & optimizing search.
+Covering Indexes – Reduce the number of reads.
+Filtered Indexes – Optimize queries with specific criteria.
+Full-Text Indexing – Enable efficient text searches.
+Index Maintenance – Rebuilding & reorganizing indexes.
+
+6. Stored Procedures, Functions & Views
+Stored Procedures – Precompiled queries for efficiency.
+User-Defined Functions (UDFs) – Scalar & Table-valued functions.
+Views – Virtual tables for abstraction & security.
+Common Table Expressions (CTEs) – Improve readability of complex queries.
+
+7. Transactions & Concurrency Control
+ACID Properties – Atomicity, Consistency, Isolation, Durability.
+Isolation Levels – READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE, SNAPSHOT.
+Locking & Deadlocks – Avoid conflicts in multi-user environments.
+Row Versioning – Manage concurrent transactions.
+
+8. Security & User Management
+Roles & Permissions – GRANT, DENY, REVOKE.
+Schema-based Security – Organize objects in schemas.
+Encryption – Transparent Data Encryption (TDE), Column-Level Encryption.
+Row-Level Security (RLS) – Restrict access based on user roles.
+
+9. Data Backup & Recovery
+Full, Differential, Transaction Log Backups – Ensuring data safety.
+Point-in-Time Recovery – Recovering data from transaction logs.
+Database Mirroring & Replication – Ensuring high availability.
+
+10. Advanced Topics
+Sharding & Partitioning – Distribute large tables.
+In-Memory OLTP – Improve performance with memory-optimized tables.
+Dynamic Data Masking – Protect sensitive data.
+Temporal Tables – Track historical changes.
+
+----------------------------------------------------------------
+LEVEL 2 : Database Automation & Integrity Management 
+
+1. Triggers (Automation & Validation)
+DML Triggers (INSERT, UPDATE, DELETE)
+DDL Triggers (CREATE, ALTER, DROP)
+Logon Triggers (Restrict logins, security policies)
+Instead Of vs After Triggers
+Recursive & Nested Triggers
+Performance Considerations of Triggers
+
+
+2. Constraints (Enforcing Integrity)
+Primary Key Constraint – Uniquely identifies a record.
+Foreign Key Constraint – Maintains referential integrity.
+Unique Constraint – Ensures unique values in a column.
+Check Constraint – Enforces specific conditions.
+Not Null Constraint – Prevents null values.
+Default Constraint – Provides default values for columns
+
+3. Transactions & Concurrency Control
+ACID Properties (Atomicity, Consistency, Isolation, Durability)
+Transaction Handling (BEGIN TRAN, COMMIT, ROLLBACK)
+Isolation Levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE, SNAPSHOT)
+Deadlock Prevention & Resolution
+Optimistic vs Pessimistic Locking
+Row Versioning & Snapshot Isolation
+
+4. Indexing & Performance Optimization
+Clustered vs Non-Clustered Indexes
+Filtered Indexes
+Covering Indexes
+Index Maintenance (REBUILD, REORGANIZE)
+Full-Text Indexing
+Partitioned Indexes for Large Tables
+
+5. Stored Procedures & Functions (Automation & Security)
+Stored Procedures for Business Logic Execution
+User-Defined Functions (Scalar, Table-Valued)
+Automating Scheduled Tasks Using SQL Jobs
+Dynamic SQL in Stored Procedures
+Error Handling in Stored Procedures (TRY...CATCH)
+
+6. Database Auditing & Logging
+Change Data Capture (CDC) – Track changes at the row level.
+Temporal Tables – Automatically track history of data changes.
+SQL Server Audit – Capture security-related changes.
+Extended Events – Monitor database performance & debugging.
+Database Mail – Send notifications on critical events.
+Event Notifications – React to database events in real-time.
+
+7. Backup, Recovery & High Availability
+Full, Differential & Transaction Log Backups
+Point-in-Time Recovery
+Database Mirroring & Replication
+Always On Availability Groups
+Failover Clustering
+Log Shipping for Disaster Recovery
+
+8. Security & Access Control
+User Roles & Permissions (GRANT, REVOKE, DENY)
+Schema-based Security
+Transparent Data Encryption (TDE)
+Dynamic Data Masking
+Row-Level Security (RLS)
+SQL Injection Prevention
+Data Classification & Auditing Compliance
+
+
+
